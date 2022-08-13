@@ -161,7 +161,7 @@ class dtyznews{
       <div class="news listbg col-sm-12 col-lg-6">
           <div>
               <h4>学校新闻</h4>
-              <ul >
+              <ul>
                   <li class="newsli"><a href="https://mp.weixin.qq.com/s/vVbQgcvZ5OM-0tFofeJyIA">致安徽省当涂第一中学2022级新生家长的一封信</a></li>
                   <li class="newsli"><a href="https://mp.weixin.qq.com/s/xK_nmGL4uHJgKdLQOjKUiw">安徽省当涂第一中学2022级“创新实验班”招生实施方案</a></li>
                   <li class="newsli"><a href="https://mp.weixin.qq.com/s/Elhgq8JCSn7kzBVmZ9mikQ">县委书记阙方俊到当涂一中考点检查高考准备工作</a></li>
@@ -169,7 +169,7 @@ class dtyznews{
                   <li class="newsli"><a href="https://mp.weixin.qq.com/s/mCUyK2ewTcUA5qAr9eF03Q">铲除“霸王花”，保护校园生态——当涂一中生物科学兴趣小组实践活动</a></li>
                   <li class="newsli"><a href="https://mp.weixin.qq.com/s/ZLaXFzK39pfKWd-S2IbB-A">“法制宣传进校园 普法教育促成长”——当涂一中携手县公安局开展普法安全教育讲座</a></li>
                   <li class="newsli"><a href="https://mp.weixin.qq.com/s/N4UOS1mrwAa-J8gNkZaJnA">逐梦路上的阶梯——记当涂一中教师陶爱华</a></li>
-                  <li class="newsli"><a href="https://mp.weixin.qq.com/s/siCQIiIiwjAvNE01h8TmSQ">中国科技大学喜报（致当涂一中）</a></li>
+                  
               
               </ul>
   
