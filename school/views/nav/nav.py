@@ -2,8 +2,8 @@ from django.shortcuts import render
 
 
 def about(request):
-    return render(request, 'nav.about.html')
+    return render(request, 'nav/about.html')
 
 
 def news(request):
-    return render(request, news.html)
+    return render(request, 'nav/news.html')
