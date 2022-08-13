@@ -4,6 +4,9 @@ class dtyz{
         this.id = id;
         this.$index = $('#'+id);
         this.nav = new dtyznav(this);
+        this.slideimg = new slideimg(this);
+        this.news = new dtyznews(this);
+        this.footer = dtyzfooter(this);
     }
 }
 
@@ -69,4 +72,113 @@ class dtyznav{
       </nav>`)
       this.root.$index.append(this.$nav);
     }
+}
+
+
+
+class slideimg{
+  constructor(root){
+    this.root = root;
+    this.$slideimg = (`<div class="imgslide"><div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../static/images/dtyz.png" class="slideimg d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="../static/images/dtyz2.jpg" class="slideimg d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="../static/images/slide3.png" class="slideimg d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div></div>`)
+    this.root.$index.append(this.$slideimg)
+  }
+}
+
+class dtyznews{
+  constructor(root){
+    this.root = root;
+    this.$content = $(
+      `<div class="container" style="margin-top: 10vh;">
+      <div class="row">
+          <div class="news col-sm-12 col-lg-6">
+              <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                      <a href="https://mp.weixin.qq.com/s/aL1GvLA0buCl70z4RSCCPw"><img src="../static/images/news1.jpg" class="newsimg d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                      <p>家校共育 扬帆启航——2022级高一新生家校共建会</p></div>
+                      </a>
+                      
+                  </div>
+                    <div class="carousel-item">
+                      <a href="https://mp.weixin.qq.com/s/l_MhVOEJbTs9MCct2tWKEg"><img src="../static/images/news2.png" class="newsimg d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <p>月明船笛参差起，风定池莲自在香——当涂一中2023届高三进入奋战状态</p></div></a>
+                      
+                      
+                    </div>
+                    <div class="carousel-item">
+                      <a href="https://mp.weixin.qq.com/s/PVg0eky_FyJHs_6iHgokJQ"> <img src="../static/images/news3.png" class="newsimg d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <p>喜迎二十大 奋进新征程——当涂一中召开全体党员大会</p>
+                      </div></a>
+  
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+          
+      </div>
+      
+      
+      <div class="news listbg col-sm-12 col-lg-6">
+          <div>
+              <h4>学校新闻</h4>
+              <ul >
+                  <li class="newsli"><a href="https://mp.weixin.qq.com/s/vVbQgcvZ5OM-0tFofeJyIA">致安徽省当涂第一中学2022级新生家长的一封信</a></li>
+                  <li class="newsli"><a href="https://mp.weixin.qq.com/s/xK_nmGL4uHJgKdLQOjKUiw">安徽省当涂第一中学2022级“创新实验班”招生实施方案</a></li>
+                  <li class="newsli"><a href="https://mp.weixin.qq.com/s/Elhgq8JCSn7kzBVmZ9mikQ">县委书记阙方俊到当涂一中考点检查高考准备工作</a></li>
+                  <li class="newsli"><a href="https://mp.weixin.qq.com/s/jyXLFnoXwx1r5N9COtEHvg">当涂一中举办“中国心·端午情”亲子朗诵活动</a></li>
+                  <li class="newsli"><a href="https://mp.weixin.qq.com/s/mCUyK2ewTcUA5qAr9eF03Q">铲除“霸王花”，保护校园生态——当涂一中生物科学兴趣小组实践活动</a></li>
+                  <li class="newsli"><a href="https://mp.weixin.qq.com/s/ZLaXFzK39pfKWd-S2IbB-A">“法制宣传进校园 普法教育促成长”——当涂一中携手县公安局开展普法安全教育讲座</a></li>
+                  <li class="newsli"><a href="https://mp.weixin.qq.com/s/N4UOS1mrwAa-J8gNkZaJnA">逐梦路上的阶梯——记当涂一中教师陶爱华</a></li>
+                  <li class="newsli"><a href="https://mp.weixin.qq.com/s/siCQIiIiwjAvNE01h8TmSQ">中国科技大学喜报（致当涂一中）</a></li>
+              
+              </ul>
+  
+          </div>
+  
+  
+      </div>
+  `
+    )
+    this.root.$index.append(this.$content);
+  }
 }
